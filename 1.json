@@ -1,0 +1,26 @@
+content='Sei addestrato sui dati fino a ottobre 2023.' additional_kwargs={'refusal': None
+} 
+response_metadata={'token_usage': {'completion_tokens': 15, 'prompt_tokens': 20, 'total_tokens': 35, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+        }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+        }
+    }, 'model_provider': 'openai', 'model_name': 'gpt-4o-2024-11-20', 'system_fingerprint': 'fp_b54fe76834', 'id': 'chatcmpl-CaL47zTgeCpi9sUtieF9G0FjxQlnL', 'prompt_filter_results': [
+        {'prompt_index': 0, 'content_filter_results': {'hate': {'filtered': False, 'severity': 'safe'
+                }, 'jailbreak': {'filtered': False, 'detected': False
+                }, 'self_harm': {'filtered': False, 'severity': 'safe'
+                }, 'sexual': {'filtered': False, 'severity': 'safe'
+                }, 'violence': {'filtered': False, 'severity': 'safe'
+                }
+            }
+        }
+    ], 'finish_reason': 'stop', 'logprobs': None, 'content_filter_results': {'hate': {'filtered': False, 'severity': 'safe'
+        }, 'protected_material_code': {'filtered': False, 'detected': False
+        }, 'protected_material_text': {'filtered': False, 'detected': False
+        }, 'self_harm': {'filtered': False, 'severity': 'safe'
+        }, 'sexual': {'filtered': False, 'severity': 'safe'
+        }, 'violence': {'filtered': False, 'severity': 'safe'
+        }
+    }
+} id='lc_run--9b367e10-9ee2-4c35-bfd1-ac3df3a5b34d-0' usage_metadata={'input_tokens': 20, 'output_tokens': 15, 'total_tokens': 35, 'input_token_details': {'audio': 0, 'cache_read': 0
+    }, 'output_token_details': {'audio': 0, 'reasoning': 0
+    }
+}
