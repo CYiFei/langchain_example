@@ -1,0 +1,99 @@
+{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content='Sure', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content="! Here's", additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' a feather', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content='ed-f', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content='unny one for you:\n\n**', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content='Why did the parrot get', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' kicked out of the comedy club', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content='?**\n\n*Because every', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' time someone told a joke...', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' he kept squawking the', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' punchline before they', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' finished!*', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' 🦜\n\n*(Bonus', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' groan: He really', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=' knew how to r', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content='uffle some feathers!', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content=')*', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content='', additional_kwargs={}, response_metadata={'finish_reason': 'stop', 'request_id': 'a2e3dc48-be12-45f0-aeb1-7dc073708091', 'token_usage': {'input_tokens': 15, 'output_tokens': 69, 'total_tokens': 84, 'prompt_tokens_details': {'cached_tokens': 0
+                }
+            }
+        }, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}|{'event': 'on_chat_model_stream', 'data': {'chunk': AIMessageChunk(content='', additional_kwargs={}, response_metadata={}, id='lc_run--910dfbe8-308a-4525-a21b-99eefcc3e494', chunk_position='last')
+    }, 'run_id': '910dfbe8-308a-4525-a21b-99eefcc3e494', 'name': 'ChatTongyi', 'tags': ['seq:step: 2'
+    ], 'metadata': {'ls_provider': 'tongyi', 'ls_model_type': 'chat', 'ls_model_name': 'qwen3-max'
+    }, 'parent_ids': ['1cfa80bd-36e0-43a9-b42d-f403389b7a23'
+    ]
+}
