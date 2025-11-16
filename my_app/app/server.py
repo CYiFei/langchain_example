@@ -7,6 +7,8 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from dotenv import load_dotenv
 import os
+from langchain_core.runnables import RunnableParallel
+from langchain_core.runnables import RunnableLambda
 
 # 加载环境变量
 load_dotenv()
@@ -36,16 +38,25 @@ qwen_model = ChatTongyi(
 )
 
 # 创建处理链
+# chain = (
+#     {"input": RunnablePassthrough()} 
+#     | prompt 
+#     | qwen_model 
+#     | StrOutputParser()
+# )
+# chain = prompt | qwen_model | StrOutputParser()
 chain = (
-    {"input": RunnablePassthrough()} 
-    | prompt 
-    | qwen_model 
+    RunnableLambda(lambda x: {"input": x})  # ✅ 将字符串转换为字典 {"input": "字符串"}
+    | prompt
+    | qwen_model
     | StrOutputParser()
 )
 
 # 添加路由
 add_routes(app, chain, path="/chat")
 add_routes(app, prompt | qwen_model, path="/chat/raw")
+# add_routes(app, chain, path="/chat", input_key="input")
+# add_routes(app, prompt | qwen_model, path="/chat/raw", input_key="input")
 
 if __name__ == "__main__":
     import uvicorn
