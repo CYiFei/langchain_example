@@ -1,0 +1,33 @@
+# 核心LangChain组件
+langchain-core==0.2.12
+langchain-community==0.2.7
+langchain-text-splitters==0.2.2
+langchain-huggingface
+
+# 机器学习基础
+torch==2.3.1
+transformers==4.41.2
+sentence-transformers==2.7.0
+
+# 阿里云相关
+dashscope==1.19.3
+modelscope==1.13.2
+
+# 向量数据库
+faiss-cpu
+
+# 文档处理
+pypdf==4.3.1
+python-docx==1.1.2
+docx2txt
+unstructured
+
+# 其他依赖
+python-dotenv==1.0.1
+tqdm==4.66.4
+requests==2.32.3
+beautifulsoup4==4.12.3
+html2text==2024.2.26
+
+# 中文处理
+jieba==0.42.1
