@@ -1,0 +1,34 @@
+Collecting langchain-dashscope
+  Using cached langchain_dashscope-0.1.8-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: dashscope<2.0.0,>=1.14.1 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from langchain-dashscope) (1.25.14)
+Collecting tiktoken<0.8.0,>=0.7.0 (from langchain-dashscope)
+  Using cached tiktoken-0.7.0.tar.gz (33 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: aiohttp in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from dashscope<2.0.0,>=1.14.1->langchain-dashscope) (3.13.3)
+Requirement already satisfied: requests in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from dashscope<2.0.0,>=1.14.1->langchain-dashscope) (2.32.5)
+Requirement already satisfied: websocket-client in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from dashscope<2.0.0,>=1.14.1->langchain-dashscope) (1.9.0)
+Requirement already satisfied: cryptography in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from dashscope<2.0.0,>=1.14.1->langchain-dashscope) (46.0.5)
+Requirement already satisfied: certifi in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from dashscope<2.0.0,>=1.14.1->langchain-dashscope) (2025.10.5)
+Requirement already satisfied: regex>=2022.1.18 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from tiktoken<0.8.0,>=0.7.0->langchain-dashscope) (2025.11.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from requests->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (3.4.4)
+Requirement already satisfied: idna<4,>=2.5 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from requests->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (3.11)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from requests->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (2.5.0)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from aiohttp->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from aiohttp->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from aiohttp->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (25.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from aiohttp->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from aiohttp->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from aiohttp->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from aiohttp->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (1.23.0)
+Requirement already satisfied: cffi>=2.0.0 in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from cryptography->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (2.0.0)
+Requirement already satisfied: pycparser in /home/zme/miniconda3/envs/test_qwen3-max/lib/python3.13/site-packages (from cffi>=2.0.0->cryptography->dashscope<2.0.0,>=1.14.1->langchain-dashscope) (3.0)
+Using cached langchain_dashscope-0.1.8-py3-none-any.whl (9.0 kB)
+Building wheels for collected packages: tiktoken
+  Building wheel for tiktoken (pyproject.toml): started
+  Building wheel for tiktoken (pyproject.toml): finished with status 'error'
+Failed to build tiktoken
