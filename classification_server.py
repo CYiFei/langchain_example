@@ -1,4 +1,6 @@
 import os
+import time
+import logging
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
@@ -7,10 +9,14 @@ from langchain_community.chat_models import ChatTongyi
 from fastapi import FastAPI, HTTPException
 from uvicorn import run
 
-# 加载环境变量
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
 load_dotenv()
 
-# ====================== 1. 定义分类数据结构 ======================
 class TextClassificationResult(BaseModel):
     category: str = Field(description="文本所属的分类标签")
     confidence: float = Field(description="分类置信度（0-1 之间）")
@@ -23,13 +29,11 @@ class TextClassificationResult(BaseModel):
             raise ValueError("置信度必须在 0 到 1 之间")
         return v
 
-# ====================== 1.1 定义请求体结构 ======================
 class ClassificationRequest(BaseModel):
     text: str
     classification_type: str
     categories: list[str]
 
-# ====================== 2. 初始化 Qwen 模型 ======================
 def init_qwen_model():
     model = ChatTongyi(
         model_name="qwen3-max",
@@ -39,7 +43,6 @@ def init_qwen_model():
     )
     return model
 
-# ====================== 3. 构建分类提示词模板 ======================
 def build_classification_prompt(classification_type, categories):
     parser = PydanticOutputParser(pydantic_object=TextClassificationResult)
     
@@ -61,34 +64,57 @@ def build_classification_prompt(classification_type, categories):
     )
     return prompt_template, parser
 
-# ====================== 4. 构建分类工作流 ======================
 def build_classification_chain(classification_type, categories):
     model = init_qwen_model()
     prompt, parser = build_classification_prompt(classification_type, categories)
     classification_chain = prompt | model | parser
     return classification_chain
 
-# ====================== 5. 创建 FastAPI 应用 ======================
 app = FastAPI(title="文本分类服务", description="基于 LangChain + Qwen 的文本分类 API")
 
 @app.post("/classify", response_model=TextClassificationResult)
 async def classify_text(request: ClassificationRequest):
+    request_start_time = time.time()
+    logger.info(f"\n{'='*60}")
+    logger.info(f"收到分类请求 - ID: {id(request)}")
+    logger.info(f"文本：{request.text[:50]}..." if len(request.text) > 50 else f"文本：{request.text}")
+    logger.info(f"分类类型：{request.classification_type}")
+    logger.info(f"分类标签：{request.categories}")
+    
     try:
+        chain_build_start = time.time()
         chain = build_classification_chain(request.classification_type, request.categories)
+        chain_build_time = time.time() - chain_build_start
+        logger.info(f"链构建耗时：{chain_build_time:.4f}秒")
+        
+        invoke_start = time.time()
         result = chain.invoke({
             "text": request.text,
             "classification_type": request.classification_type,
             "categories": request.categories
         })
+        invoke_time = time.time() - invoke_start
+        
+        total_time = time.time() - request_start_time
+        
+        logger.info(f"\n模型推理完成:")
+        logger.info(f"  分类结果：{result.category}")
+        logger.info(f"  置信度：{result.confidence:.4f}")
+        logger.info(f"  推理耗时：{invoke_time:.4f}秒")
+        logger.info(f"  总耗时：{total_time:.4f}秒")
+        logger.info(f"{'='*60}\n")
+        
         return result
     except Exception as e:
+        total_time = time.time() - request_start_time
+        logger.error(f"请求处理失败 - 耗时：{total_time:.4f}秒")
+        logger.error(f"错误信息：{str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/health")
 async def health_check():
     return {"status": "healthy"}
 
-# ====================== 6. 测试示例 ======================
 if __name__ == "__main__":
     print("===== 情感分类示例 =====")
     sentiment_chain = build_classification_chain(
